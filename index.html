@@ -27,7 +27,7 @@
 
       <div class="row">
         <div class="new-todo">
-          <input v-model="" type="toext" class="todo" placeholder="Nuovo todo">
+          <input v-model="newPoint" type="text" class="todo" placeholder="Nuovo todo">
           <button type="button" class="fas fa-times" @click="CreateNewPoint">Aggiungi</button>
         </div>
 
@@ -37,7 +37,7 @@
 
         <div class="todos-container">
           <ul v-if="points.length > 0">
-            <!-- <li v-for="point in points" class="todo">{{point}}<i @click="deletePoint(index)" class="cursor-pointer fas fa-times"></i> </li> -->
+            <li v-for="point in points" class="todo">{{point}}<i @click="deletePoint(index)" class="cursor-pointer fas fa-times"></i></li>
           </ul>
 
 
