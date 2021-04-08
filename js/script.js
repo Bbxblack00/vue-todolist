@@ -13,7 +13,7 @@ function initVue() {
     // creare le funzioni
     methods: {
       CreateNewPoint: function() {
-        if (this.newTodo.length > 0) {
+        if (this.newPoint.length > 0) {
           this.points.push(this.newPoint);
           // dopo aver inserito l'elemento all'interno dell'array,
           // procediamo a cancellarlo all'interno della casella di testo.
