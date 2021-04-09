@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -37,7 +37,7 @@
 
         <div class="todos-container">
           <ul v-if="points.length > 0">
-            <li v-for="point in points" class="todo">{{point}}<i @click="deletePoint(index)" class="cursor-pointer fas fa-times"></i></li>
+            <li v-for="point in points" class="todo">{{point}}<i @click="deletePoint(index)" class="fas fa-times"></i></li>
           </ul>
 
 
